@@ -212,7 +212,7 @@ body {
   display: block;
   height: 28vh;
   overflow: auto;
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 .expenses tbody::-webkit-scrollbar {
