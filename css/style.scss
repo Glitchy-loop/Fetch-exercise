@@ -126,7 +126,6 @@ body {
 //----------- EXPENSES TABLE SECTION
 
 .expenses {
-    max-height:37%;
     background:$tablesColor;
     margin-top:1rem;
     box-shadow: $borderShadow;
@@ -181,7 +180,7 @@ body {
 
     tbody {
         display:block;
-        height:20vh;
+        height:28vh;
         overflow:auto;
         font-size:.9rem;
 

@@ -152,7 +152,6 @@ body {
 }
 
 .expenses {
-  max-height: 37%;
   background: #f0f0f0;
   margin-top: 1rem;
   -webkit-box-shadow: 1px 5px 10px 5px #d4d4d4;
@@ -211,7 +210,7 @@ body {
 
 .expenses tbody {
   display: block;
-  height: 20vh;
+  height: 28vh;
   overflow: auto;
   font-size: .9rem;
 }
