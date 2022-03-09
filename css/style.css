@@ -1,0 +1,245 @@
+body {
+  background-color: #e9e9e9;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  background-color: #e9e9e9;
+  height: 100vh;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.financialData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding-top: .5rem;
+  height: 30%;
+}
+
+.financialData .financialDataBlock {
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44%;
+  margin: 1.2rem;
+  -webkit-box-shadow: 1px 5px 10px 5px #d4d4d4;
+          box-shadow: 1px 5px 10px 5px #d4d4d4;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.financialData .financialDataBlock:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.financialData .financialDataBlock .logo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.financialData .financialDataBlock .logo i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.financialData .financialDataBlock .stats {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.financialData .financialDataBlock .stats .financialDataResult, .financialData .financialDataBlock .stats .financialDataName {
+  margin-left: 1.5rem;
+}
+
+.financialData .financialDataBlock .stats .financialDataResult {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.financialData .financialDataBlock .stats .financialDataName {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.financialData .financialDataBlock:nth-child(1) .logo {
+  background: -webkit-gradient(linear, left top, right top, from(#ff7171), to(#ec1818));
+  background: linear-gradient(90deg, #ff7171 0%, #ec1818 100%);
+}
+
+.financialData .financialDataBlock:nth-child(2) .logo {
+  background: -webkit-gradient(linear, left top, right top, from(#4ad115), to(#14a354));
+  background: linear-gradient(90deg, #4ad115 0%, #14a354 100%);
+}
+
+.financialData .financialDataBlock:nth-child(3) .logo {
+  background: -webkit-gradient(linear, left top, right top, from(#3d6cee), to(#1547d1));
+  background: linear-gradient(90deg, #3d6cee 0%, #1547d1 100%);
+}
+
+.financialData .financialDataBlock:nth-child(4) .logo {
+  background: -webkit-gradient(linear, left top, right top, from(#66c7ff), to(#019bf5));
+  background: linear-gradient(90deg, #66c7ff 0%, #019bf5 100%);
+}
+
+.noticeBoard {
+  height: 30%;
+  background-color: #f0f0f0;
+  overflow-y: scroll;
+  -webkit-box-shadow: 1px 5px 10px 5px #d4d4d4;
+          box-shadow: 1px 5px 10px 5px #d4d4d4;
+}
+
+.noticeBoard::-webkit-scrollbar {
+  width: 8px;
+}
+
+.noticeBoard::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, right top, from(#404cfd), to(#3a47ff));
+  background: linear-gradient(90deg, #404cfd 0%, #3a47ff 100%);
+}
+
+.noticeBoard h3 {
+  padding: 1rem 0 0 3rem;
+}
+
+.noticeBoard div {
+  margin-top: 0.5rem;
+}
+
+.noticeBoard .tweet {
+  padding-left: 3rem;
+}
+
+.noticeBoard .tweet .tweetdate {
+  font-size: 1.3rem;
+}
+
+.noticeBoard .tweet .tweetusername {
+  font-weight: bold;
+  color: blue;
+}
+
+.noticeBoard .tweet .tweetcontent {
+  font-size: 1rem;
+}
+
+.expenses {
+  max-height: 37%;
+  background: #f0f0f0;
+  margin-top: 1rem;
+  -webkit-box-shadow: 1px 5px 10px 5px #d4d4d4;
+          box-shadow: 1px 5px 10px 5px #d4d4d4;
+}
+
+.expenses .expensesBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 1rem;
+}
+
+.expenses .expensesBar #searchBtn {
+  background-color: #046ba7;
+  border: none;
+  border-radius: 10px;
+  padding: .3rem;
+  color: #fff;
+}
+
+.expenses .expensesBar #searchBtn:hover {
+  cursor: pointer;
+}
+
+.expenses table {
+  padding-left: 3rem;
+}
+
+.expenses thead {
+  font-size: 1rem;
+  border-bottom: 1px solid #d3d3d3;
+  width: calc( 100% - 1em);
+}
+
+.expenses thead i {
+  font-size: .6rem;
+}
+
+.expenses thead i:hover {
+  cursor: pointer;
+}
+
+.expenses thead, .expenses tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.expenses tbody {
+  display: block;
+  height: 20vh;
+  overflow: auto;
+  font-size: .9rem;
+}
+
+.expenses tbody::-webkit-scrollbar {
+  width: 8px;
+}
+
+.expenses tbody::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, right top, from(#d115b2), to(#9714a3));
+  background: linear-gradient(90deg, #d115b2 0%, #9714a3 100%);
+}
+
+.expenses tbody tr {
+  margin-top: .8rem;
+}
+
+.expenses tbody tr td:nth-child(4) {
+  border-radius: 10px;
+  text-align: center;
+  float: left;
+  color: #fff;
+  width: 3rem;
+}
+
+@media (max-width: 655px) {
+  .financialData .financialDataBlock {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch data project</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- main container -->
+    <div class="container">
+      <!--? financial data -->
+      <div class="financialData">
+        <!-- 1st BLOCK -->
+        <div class="financialDataBlock">
+          <!-- LOGO -->
+          <div class="logo"><i class="fa-solid fa-money-bill-1"></i></div>
+          <!-- DATA -->
+          <div class="stats">
+            <div class="financialDataResult" id="howMuchMissing">1.500</div>
+            <div class="financialDataName">Still missing</div>
+          </div>
+        </div>
+        <!-- 2st BLOCK -->
+        <div class="financialDataBlock">
+          <!-- LOGO -->
+          <div class="logo"><i class="fa-solid fa-pen-to-square"></i></div>
+          <!-- DATA -->
+          <div class="stats">
+            <div class="financialDataResult" id="howManyNotices">1.500</div>
+            <div class="financialDataName">Notices</div>
+          </div>
+        </div>
+        <!-- 3st BLOCK -->
+        <div class="financialDataBlock">
+          <!-- LOGO -->
+          <div class="logo"><i class="fa-solid fa-graduation-cap"></i></div>
+          <!-- DATA -->
+          <div class="stats">
+            <div class="financialDataResult">1.500</div>
+            <div class="financialDataName">Type spent the most</div>
+          </div>
+        </div>
+        <!-- 4st BLOCK -->
+        <div class="financialDataBlock">
+          <!-- LOGO -->
+          <div class="logo"><i class="fa-solid fa-money-bill-1"></i></div>
+          <!-- DATA -->
+          <div class="stats">
+            <div id="totalSpentDiv" class="financialDataResult">1.500</div>
+            <div class="financialDataName">Total Expenses</div>
+          </div>
+        </div>
+      </div>
+      <!-- Notice Board -->
+      <div class="noticeBoard">
+        <h3>Notice Board</h3>
+      </div>
+      <!-- EXPENSES TABLE -->
+      <div class="expenses">
+        <!-- TOP EXPENSES BAR -->
+        <div class="expensesBar">
+          <h3>All Expenses</h3>
+          <div class="searchBar">
+            <form id="search">
+              <input
+                type="search"
+                id="searchById"
+                placeholder="Search by ID..."
+              />
+              <input
+                type="search"
+                id="searchByDate"
+                placeholder="Search by Date..."
+              />
+              <input type="submit" value="Search" id="searchBtn" />
+            </form>
+          </div>
+        </div>
+        <!-- EXPENSES DATA -->
+        <div class="expensesData">
+          <table id="expenses">
+            <thead>
+              <tr>
+                <td>ID</td>
+                <td id="sortByType">
+                  Expenses Type <i class="fa-solid fa-sort"></i>
+                </td>
+                <td id="sortByAmount">
+                  Amount <i class="fa-solid fa-sort"></i>
+                </td>
+                <td id="sortByStatus">
+                  Status <i class="fa-solid fa-sort"></i>
+                </td>
+                <td>E-mail</td>
+                <td>Date <i class="fa-solid fa-sort"></i></td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

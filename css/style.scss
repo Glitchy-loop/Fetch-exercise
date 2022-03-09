@@ -1,0 +1,217 @@
+$backgroundColor: #e9e9e9;
+$borderShadow:1px 5px 10px 5px #d4d4d4;
+$tablesColor:#f0f0f0;
+
+body {
+     background-color: $backgroundColor;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color:$backgroundColor;
+    height:100vh;
+    width:98%;
+    margin:0 auto;
+}
+
+//----------- FINANCIAL DATA SECTION
+
+.financialData {
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    padding-top:.5rem;
+    height:30%;
+
+    .financialDataBlock {
+        background-color:$tablesColor;
+        display:flex;
+        width:44%;
+        margin:1.2rem;
+        box-shadow:$borderShadow;
+        transition:250ms;
+
+        &:hover {
+            transform: scale(1.010);
+        }
+
+        .logo {
+            width:50%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+            i {
+                font-size:2rem;
+                color:#fff;
+                
+            }
+        }
+        .stats {
+            width:50%;
+            display:flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+
+            .financialDataResult, .financialDataName {
+                margin-left:1.5rem;
+            }
+            .financialDataResult {
+                font-size:2rem;
+                font-weight: 800;
+            }
+            .financialDataName {
+                font-weight: 600;
+                margin-top:0.5rem;
+            }
+        }
+    }
+
+    & .financialDataBlock:nth-child(1) .logo {
+        background: linear-gradient(90deg, #ff7171 0%, #ec1818 100%);
+    }
+    & .financialDataBlock:nth-child(2) .logo {
+        background: linear-gradient(90deg, #4ad115 0%, rgb(20, 163, 84) 100%);
+    }
+    & .financialDataBlock:nth-child(3) .logo {
+        background: linear-gradient(90deg, #3d6cee 0%, #1547d1 100%);
+    }
+    & .financialDataBlock:nth-child(4) .logo {
+        background: linear-gradient(90deg, #66c7ff 0%, #019bf5 100%);
+    }
+}
+
+//----------- NOTICE BOARD SECTION
+
+.noticeBoard {
+    height:30%;
+    background-color: $tablesColor;
+    overflow-y: scroll;
+    box-shadow: $borderShadow;
+
+    &::-webkit-scrollbar {
+        width: 8px; 
+    }
+         
+      &::-webkit-scrollbar-thumb {
+        background:linear-gradient(90deg, #404cfd 0%, #3a47ff 100%);   
+    }
+
+    h3 {
+        padding:1rem 0 0 3rem;
+    }
+
+    div {
+        margin-top:0.5rem;
+    }
+    .tweet {
+        padding-left:3rem;
+
+        .tweetdate {
+            font-size:1.3rem;
+        }
+        .tweetusername {
+            font-weight: bold;
+            color:blue;
+        }
+        .tweetcontent{
+            font-size:1rem;
+            
+        }
+    }
+}
+
+//----------- EXPENSES TABLE SECTION
+
+.expenses {
+    max-height:37%;
+    background:$tablesColor;
+    margin-top:1rem;
+    box-shadow: $borderShadow;
+    
+
+    .expensesBar{
+        display:flex;
+        padding-left:3rem;
+        justify-content: space-between;
+        align-items: center;
+        padding-right:1rem;
+
+
+       #searchBtn {
+            background-color: #046ba7;
+            border:none;
+            border-radius:10px;
+            padding:.3rem;
+            color:#fff;
+
+            &:hover {
+                cursor:pointer;
+            }
+        }
+    }
+
+
+
+    table {
+        padding-left:3rem;
+    }
+
+    thead {
+        font-size:1rem;
+        border-bottom:1px solid #d3d3d3;
+        width: calc( 100% - 1em );
+
+        i {
+            font-size: .6rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        
+    }
+    thead, tbody tr {
+        display:table;
+        width:100%;
+        table-layout:fixed;
+    }
+
+    tbody {
+        display:block;
+        height:20vh;
+        overflow:auto;
+        font-size:.9rem;
+
+        
+          &::-webkit-scrollbar {
+            width: 8px; 
+        }
+             
+          &::-webkit-scrollbar-thumb {
+            background:linear-gradient(90deg, #d115b2 0%, rgb(151, 20, 163) 100%);    
+        }
+
+        tr {
+            margin-top:.8rem;
+
+            td:nth-child(4) {
+                border-radius: 10px;
+                text-align: center;
+                float: left;
+                color:#fff;
+                width: 3rem;
+
+            }
+        }
+    }
+}
+
+
+@media (max-width:655px){
+    .financialData .financialDataBlock {
+        width:100%;
+    }
+}
